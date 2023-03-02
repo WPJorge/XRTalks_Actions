@@ -1,0 +1,13 @@
+name: 'Name of the Action'
+author: 'Author of the Action'
+description: 'What does the Action do?'
+inputs: 
+    username:
+        description: 'Description of input1'
+        required: true
+runs: 
+    using: "composite" 
+    steps:
+      - name: step1Name
+        id: step1-id
+        run: echo Hello ${{ inputs.username }}
