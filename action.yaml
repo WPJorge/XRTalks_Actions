@@ -11,3 +11,4 @@ runs:
       - name: step1Name
         id: step1-id
         run: echo Hello ${{ inputs.username }}
+        shell: bash
